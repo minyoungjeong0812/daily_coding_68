@@ -1,0 +1,11 @@
+##Questions to ask : Can the # of given bishops be 0? Can the chess board be 0X0 1X1 where attacking is not possible at all? 
+Will there be maximum value? Are tuples neccessary sorted? Do you mind a brute force algorithm?
+
+##Solve:
+
+M = (0, 0)
+(1, 2)
+(2, 2)
+(4, 0)
+
+checker=[[0 for x in range(M)] for x in range(M)]
