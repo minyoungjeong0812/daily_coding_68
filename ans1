@@ -8,4 +8,24 @@ M = (0, 0)
 (2, 2)
 (4, 0)
 
-checker=[[0 for x in range(M)] for x in range(M)]
+#possible comobos
+(0,0)-(1,1)-(2,2). ....
+(0,1)-(1,2)-(2.3)-...
+
+#the absolute value of subtraction on the first elements = the absolute value of subtration on the last elements
+ex) for the given example, |0-2| = |0-2| and |2-4|=|2-0|.
+
+def bishop(M,blist):
+
+  counter= 0
+
+  for x in range(len(blist)-1):
+    for y in range(1,len(blist)):
+      check1=abs(blist[x][0] - blist[y][0])
+      check2=abs(blist[x][1] - blist[y][1])
+    
+    
+      if check1 == check2:
+        counter+=1
+   return counter
+      
