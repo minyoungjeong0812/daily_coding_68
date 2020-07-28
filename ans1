@@ -20,7 +20,7 @@ def bishop(M,blist):
   counter= 0
 
   for x in range(len(blist)-1):
-    for y in range(1,len(blist)):
+    for y in range(x+1,len(blist)):
       check1=abs(blist[x][0] - blist[y][0])
       check2=abs(blist[x][1] - blist[y][1])
     
